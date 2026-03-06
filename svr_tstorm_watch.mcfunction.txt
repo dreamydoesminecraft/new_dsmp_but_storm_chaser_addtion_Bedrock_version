@@ -1,0 +1,7 @@
+# ==========================================
+# WARNING — SEVERE T-STORM WATCH
+# ==========================================
+
+scoreboard players set global nws_alert 10
+function nws/issue_watch
+function news/broadcast_weather

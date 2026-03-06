@@ -1,0 +1,8 @@
+# ==========================================
+# NPC — SPAWN STORM CHASER
+# ==========================================
+
+summon npc_storm_chaser ~ ~ ~
+tag @e[type=npc_storm_chaser,limit=1,sort=nearest] add npc
+scoreboard players set @e[type=npc_storm_chaser,limit=1,sort=nearest] npc_state 0
+scoreboard players set @e[type=npc_storm_chaser,limit=1,sort=nearest] npc_health 20

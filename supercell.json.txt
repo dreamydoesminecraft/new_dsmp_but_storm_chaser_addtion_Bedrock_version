@@ -1,0 +1,31 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:supercell",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 500 },
+      "minecraft:physics": { "has_gravity": false },
+      "minecraft:collision_box": { "width": 8, "height": 8 },
+      "minecraft:timer": {
+        "time": 4,
+        "looping": true,
+        "on_timer": { "event": "tick" }
+      }
+    },
+    "events": {
+      "tick": {
+        "run_command": {
+          "command": [
+            "function storms/update_supercell",
+            "function storms/supercell_lightning",
+            "function storms/supercell_hail"
+          ]
+        }
+      }
+    }
+  }
+}

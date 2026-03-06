@@ -1,0 +1,6 @@
+# ==========================================
+# STORM — SPAWN THUNDERSTORM
+# ==========================================
+
+summon thunderstorm ~ ~ ~
+tag @e[type=thunderstorm,limit=1,sort=nearest] add storm

@@ -1,0 +1,8 @@
+# ==========================================
+# NPC — SPAWN NEWS ANCHOR
+# ==========================================
+
+summon npc_news_anchor ~ ~ ~
+tag @e[type=npc_news_anchor,limit=1,sort=nearest] add npc
+scoreboard players set @e[type=npc_news_anchor,limit=1,sort=nearest] npc_state 0
+scoreboard players set @e[type=npc_news_anchor,limit=1,sort=nearest] npc_health 20

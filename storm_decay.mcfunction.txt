@@ -1,0 +1,12 @@
+# ==========================================
+# STORM — DECAY LOGIC
+# ==========================================
+
+# Tornado weakens over time
+execute as @e[type=tornado] if random 1..150 run scoreboard players remove @s tornado_intensity 1
+
+# Supercell weakens
+execute as @e[type=supercell] if random 1..200 run scoreboard players remove @s rotation_level 1
+
+# Hurricane weakens over land
+execute as @e[type=hurricane_eye] at @s if block ~ ~-1 ~ grass_block run scoreboard players remove @s tropical_category 1

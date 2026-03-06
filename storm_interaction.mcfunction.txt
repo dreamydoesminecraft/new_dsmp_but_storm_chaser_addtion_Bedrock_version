@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — INTERACTION LOGIC
+# ==========================================
+
+# Supercell merges with thunderstorm
+execute if entity @e[type=supercell,distance=..50] if entity @e[type=thunderstorm,distance=..50] run kill @e[type=thunderstorm,limit=1,sort=nearest]
+
+# Hurricane absorbs thunderstorms
+execute if entity @e[type=hurricane_eye,distance=..80] if entity @e[type=thunderstorm,distance=..80] run kill @e[type=thunderstorm,limit=1,sort=nearest]

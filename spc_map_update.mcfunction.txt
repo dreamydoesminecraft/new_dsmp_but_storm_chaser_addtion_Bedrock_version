@@ -1,0 +1,9 @@
+# ==========================================
+# SPC — MAP UPDATE
+# ==========================================
+
+# Update TV SPC channel
+scoreboard players set @e[type=tv_screen] tv_channel 3
+
+# Update phone SPC app
+scoreboard players set @a phone_app 4

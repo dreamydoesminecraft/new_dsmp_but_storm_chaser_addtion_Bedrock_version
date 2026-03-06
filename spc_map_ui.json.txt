@@ -1,0 +1,22 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "spc_map_ui": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/spc_background",
+          "size": [400, 240]
+        },
+        {
+          "type": "image",
+          "id": "spc_map",
+          "texture": "textures/ui/spc_day1",
+          "size": [300, 200],
+          "offset": [50, 20]
+        }
+      ]
+    }
+  }
+}

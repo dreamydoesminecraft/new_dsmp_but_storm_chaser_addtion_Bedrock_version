@@ -1,0 +1,5 @@
+# ==========================================
+# STORM — SUPERCELL LIGHTNING
+# ==========================================
+
+execute as @e[type=supercell] at @s if random 1..15 run summon lightning_bolt ~ ~ ~

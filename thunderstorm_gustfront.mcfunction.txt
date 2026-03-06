@@ -1,0 +1,6 @@
+# ==========================================
+# STORM — THUNDERSTORM GUST FRONT
+# ==========================================
+
+# Push outward
+execute as @e[type=thunderstorm] at @s run tp @e[distance=..25] ^ ^ ^-1

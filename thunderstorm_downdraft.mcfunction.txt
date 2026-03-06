@@ -1,0 +1,6 @@
+# ==========================================
+# STORM — THUNDERSTORM DOWNDRAFT
+# ==========================================
+
+# Push entities downward
+execute as @e[type=thunderstorm] at @s run tp @e[distance=..20] ~ ~-0.3 ~

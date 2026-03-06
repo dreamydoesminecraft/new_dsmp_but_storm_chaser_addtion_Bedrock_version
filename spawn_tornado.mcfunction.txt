@@ -1,0 +1,8 @@
+# ==========================================
+# STORM — SPAWN TORNADO
+# ==========================================
+
+summon tornado ~ ~ ~
+tag @e[type=tornado,limit=1,sort=nearest] add storm
+scoreboard players set @e[type=tornado,limit=1,sort=nearest] storm_type 1
+scoreboard players set @e[type=tornado,limit=1,sort=nearest] tornado_intensity 1

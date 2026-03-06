@@ -1,0 +1,6 @@
+import { world } from "@minecraft/server";
+
+export function updateSPC() {
+  // Hook for SPC risk updates
+  // Called by mcfunction or scheduled script
+}

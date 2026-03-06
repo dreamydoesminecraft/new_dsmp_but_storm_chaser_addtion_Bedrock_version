@@ -1,0 +1,7 @@
+# ==========================================
+# STORM — SPAWN HAIL
+# ==========================================
+
+summon hailstorm ~ ~ ~
+tag @e[type=hailstorm,limit=1,sort=nearest] add storm
+scoreboard players set @e[type=hailstorm,limit=1,sort=nearest] hail_size 1

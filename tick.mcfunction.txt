@@ -1,0 +1,54 @@
+# ==========================================
+# Storm Chaser SMP — TICK
+# Runs every tick (20 TPS)
+# ==========================================
+
+# ----- Storm Updates -----
+function storms/update_tornado
+function storms/update_hurricane
+function storms/update_tropical_storm
+function storms/update_thunderstorm
+function storms/update_supercell
+function storms/update_hail
+function storms/move_storm
+function storms/intensify_storm
+function storms/dissipate_storm
+
+# ----- Radar -----
+function radar/tower_tick
+function radar/scan
+
+# ----- Warning System -----
+function warnings/tornado_warning
+function warnings/tornado_emergency
+function warnings/svr_tstorm_warning
+function warnings/hurricane_warning
+function warnings/tropical_storm_warning
+function warnings/flash_flood_warning
+function warnings/extreme_wind_warning
+
+# ----- SPC -----
+function spc/risk_update
+function spc/spc_map_update
+
+# ----- NWS -----
+function nws/nws_broadcast
+
+# ----- News -----
+function news/update_news_ticker
+
+# ----- Electronics -----
+function electronics/tv_update
+function electronics/siren_tick
+
+# ----- Phone -----
+function phone/phone_update
+
+# ----- NPCs -----
+function npc/npc_daily_cycle
+function npc/npc_storm_react
+function npc/npc_injury_update
+
+# ----- Vehicles -----
+function vehicles/vehicle_update
+function vehicles/vehicle_wind_push

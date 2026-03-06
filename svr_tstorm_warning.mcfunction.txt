@@ -1,0 +1,7 @@
+# ==========================================
+# WARNING — SEVERE T-STORM WARNING
+# ==========================================
+
+scoreboard players set global nws_alert 4
+function nws/issue_warning
+function news/broadcast_weather

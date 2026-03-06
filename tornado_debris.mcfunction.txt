@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — TORNADO DEBRIS GENERATION
+# ==========================================
+
+# Spawn debris around tornado
+execute as @e[type=tornado] at @s run summon debris ^ ^ ^1
+
+# Random debris scatter
+execute as @e[type=tornado] at @s if random 1..3 run tp @e[type=debris,limit=1,sort=nearest] ^ ^ ^2

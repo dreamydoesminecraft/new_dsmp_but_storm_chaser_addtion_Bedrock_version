@@ -1,0 +1,7 @@
+# ==========================================
+# STORM — SPAWN HURRICANE
+# ==========================================
+
+summon hurricane_eye ~ ~ ~
+tag @e[type=hurricane_eye,limit=1,sort=nearest] add storm
+scoreboard players set @e[type=hurricane_eye,limit=1,sort=nearest] tropical_category 1

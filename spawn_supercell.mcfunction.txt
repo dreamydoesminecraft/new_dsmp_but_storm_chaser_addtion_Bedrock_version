@@ -1,0 +1,6 @@
+# ==========================================
+# STORM — SPAWN SUPERCELL
+# ==========================================
+
+summon supercell ~ ~ ~
+tag @e[type=supercell,limit=1,sort=nearest] add storm

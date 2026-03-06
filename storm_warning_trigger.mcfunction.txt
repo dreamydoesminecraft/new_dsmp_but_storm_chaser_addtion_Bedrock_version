@@ -1,0 +1,15 @@
+# ==========================================
+# STORM — WARNING TRIGGER
+# ==========================================
+
+# Tornado Warning
+execute if entity @e[type=tornado,distance=..200] run scoreboard players set global nws_alert 2
+
+# Tornado Emergency
+execute if entity @e[type=tornado,distance=..80] if score global tornado_intensity matches 4.. run scoreboard players set global nws_alert 3
+
+# Severe Thunderstorm Warning
+execute if entity @e[type=supercell,distance=..200] run scoreboard players set global nws_alert 4
+
+# Hurricane Warning
+execute if entity @e[type=hurricane_eye,distance=..300] run scoreboard players set global nws_alert 5

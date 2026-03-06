@@ -1,0 +1,33 @@
+import { world, system } from "@minecraft/server";
+
+system.runInterval(() => {
+  // Storm movement
+  for (const storm of world.getEntities({ tags: ["storm"] })) {
+    storm.teleport(
+      { x: storm.location.x + 1, y: storm.location.y, z: storm.location.z },
+      storm.dimension,
+      0,
+      0
+    );
+  }
+
+  // Intensification logic
+  for (const tornado of world.getEntities({ type: "storm:tornado" })) {
+    if (Math.random() < 0.01) {
+      const intensity = tornado.getProperty("tornado_intensity") ?? 1;
+      tornado.setProperty("tornado_intensity", intensity + 1);
+    }
+  }
+
+  for (const hurricane of world.getEntities({ type: "storm:hurricane_eye" })) {
+    if (Math.random() < 0.015) {
+      const cat = hurricane.getProperty("tropical_category") ?? 1;
+      hurricane.setProperty("tropical_category", cat + 1);
+    }
+  }
+
+  // Dissipation
+  for (const storm of world.getEntities({ tags: ["storm"] })) {
+    if (Math.random() < 0.005) storm.kill();
+  }
+}, 20);
