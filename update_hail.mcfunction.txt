@@ -1,0 +1,5 @@
+# ==========================================
+# STORM — UPDATE HAIL
+# ==========================================
+
+execute as @e[type=hailstorm] at @s run summon falling_block ~ ~ ~ {Block:"ice"}

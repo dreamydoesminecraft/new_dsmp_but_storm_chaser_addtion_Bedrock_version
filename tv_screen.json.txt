@@ -1,0 +1,48 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:tv_screen",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 5,
+        "max": 5
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 1.0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:behavior.tick_world": {
+        "priority": 1
+      },
+      "minecraft:timer": {
+        "time": 2,
+        "looping": true,
+        "on_timer": {
+          "event": "update_channel"
+        }
+      }
+    },
+    "events": {
+      "update_channel": {
+        "run_command": {
+          "command": [
+            "function electronics/tv_update"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+# ==========================================
+# ADVISORY — TROPICAL DEPRESSION
+# ==========================================
+
+scoreboard players set global nws_alert 13
+function nws/issue_advisory
+function news/broadcast_weather

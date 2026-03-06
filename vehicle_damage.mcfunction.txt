@@ -1,0 +1,15 @@
+# ==========================================
+# VEHICLE — DAMAGE
+# ==========================================
+
+# Tornado damage
+execute as @e[tag=vehicle] at @s if entity @e[type=tornado,distance=..15] run scoreboard players add @s vehicle_damage 5
+
+# Hail damage
+execute as @e[tag=vehicle] at @s if entity @e[type=hailstorm,distance=..10] run scoreboard players add @s vehicle_damage 2
+
+# Hurricane wind damage
+execute as @e[tag=vehicle] at @s if entity @e[type=hurricane_eye,distance=..40] run scoreboard players add @s vehicle_damage 3
+
+# Destroy vehicle if damage too high
+execute as @e[tag=vehicle] if score @s vehicle_damage matches 50.. run kill @s

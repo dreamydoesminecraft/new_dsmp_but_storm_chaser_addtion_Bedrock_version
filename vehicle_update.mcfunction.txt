@@ -1,0 +1,12 @@
+# ==========================================
+# VEHICLE — UPDATE
+# ==========================================
+
+# Move vehicle forward based on speed
+execute as @e[tag=vehicle] at @s run tp @s ^ ^ ^0.1
+
+# Slow down if damaged
+execute as @e[tag=vehicle] if score @s vehicle_damage matches 20.. run scoreboard players remove @s vehicle_speed 1
+
+# Prevent negative speed
+execute as @e[tag=vehicle] if score @s vehicle_speed matches ..0 run scoreboard players set @s vehicle_speed 0

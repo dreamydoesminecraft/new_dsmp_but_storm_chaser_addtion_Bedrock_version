@@ -1,0 +1,12 @@
+# ==========================================
+# VEHICLE — WIND PUSH
+# ==========================================
+
+# Tornado suction
+execute as @e[tag=vehicle] at @s if entity @e[type=tornado,distance=..20] run tp @s ^ ^ ^1
+
+# Hurricane push
+execute as @e[tag=vehicle] at @s if entity @e[type=hurricane_eye,distance=..60] run tp @s ^ ^ ^-0.5
+
+# Thunderstorm gust front
+execute as @e[tag=vehicle] at @s if entity @e[type=thunderstorm,distance=..30] run tp @s ^ ^ ^-0.3

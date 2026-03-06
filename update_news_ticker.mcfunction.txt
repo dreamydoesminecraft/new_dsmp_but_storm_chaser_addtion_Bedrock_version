@@ -1,0 +1,25 @@
+# ==========================================
+# NEWS — TICKER UPDATE
+# ==========================================
+
+# Tornado Warning ticker
+execute if score global nws_alert matches 2 run title @a[actionbar] {"text":"Tornado Warning in effect — Seek shelter now","color":"red"}
+
+# Tornado Emergency ticker
+execute if score global nws_alert matches 3 run title @a[actionbar] {"text":"TORNADO EMERGENCY — Catastrophic damage possible","color":"dark_red"}
+
+# Severe Thunderstorm Warning ticker
+execute if score global nws_alert matches 4 run title @a[actionbar] {"text":"Severe Thunderstorm Warning — Large hail & damaging winds","color":"yellow"}
+
+# Hurricane Warning ticker
+execute if score global nws_alert matches 5 run title @a[actionbar] {"text":"Hurricane Warning — Life-threatening storm surge & winds","color":"aqua"}
+
+# Extreme Wind Warning ticker
+execute if score global nws_alert matches 7 run title @a[actionbar] {"text":"Extreme Wind Warning — 100+ mph winds imminent","color":"gold"}
+
+# Default ticker (SPC risk)
+execute if score global spc_risk matches 1 run title @a[actionbar] {"text":"SPC Marginal Risk — Isolated storms possible","color":"green"}
+execute if score global spc_risk matches 2 run title @a[actionbar] {"text":"SPC Slight Risk — Scattered severe storms","color":"yellow"}
+execute if score global spc_risk matches 3 run title @a[actionbar] {"text":"SPC Enhanced Risk — Numerous severe storms","color":"orange"}
+execute if score global spc_risk matches 4 run title @a[actionbar] {"text":"SPC Moderate Risk — Widespread severe storms","color":"red"}
+execute if score global spc_risk matches 5 run title @a[actionbar] {"text":"SPC High Risk — Violent long-track tornadoes possible","color":"dark_red"}

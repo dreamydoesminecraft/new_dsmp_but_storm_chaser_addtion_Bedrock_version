@@ -1,0 +1,6 @@
+# ==========================================
+# TV — SPC OUTLOOK
+# ==========================================
+
+title @a[tag=near_tv] title {"text":"SPC OUTLOOK","color":"gold","bold":true}
+title @a[tag=near_tv] subtitle {"text":"Day 1–3 risk levels","color":"white"}

@@ -1,0 +1,12 @@
+# ==========================================
+# STORM — UPDATE TORNADO
+# ==========================================
+
+# Increase rotation near tornado
+execute as @e[type=tornado] at @s run scoreboard players add @s rotation_level 1
+
+# Damage blocks near tornado
+execute as @e[type=tornado] at @s if block ~ ~ ~ air run fill ~-2 ~-1 ~-2 ~2 ~2 ~2 air destroy
+
+# Pull entities inward
+execute as @e[type=tornado] at @s run tp @e[distance=..10] ^ ^ ^1

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:vehicle_ambulance",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 60, "max": 60 },
+      "minecraft:collision_box": { "width": 1.8, "height": 2.0 },
+      "minecraft:physics": { "has_gravity": true },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": ["player"]
+      },
+      "minecraft:pushable": { "is_pushable": false }
+    }
+  }
+}

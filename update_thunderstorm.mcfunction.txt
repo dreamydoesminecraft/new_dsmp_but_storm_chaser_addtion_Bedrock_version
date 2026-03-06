@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — UPDATE THUNDERSTORM
+# ==========================================
+
+# Lightning chance
+execute as @e[type=thunderstorm] at @s if random 1..20 run summon lightning_bolt ~ ~ ~
+
+# Rain effect
+execute as @e[type=thunderstorm] at @s run particle rain ~ ~ ~

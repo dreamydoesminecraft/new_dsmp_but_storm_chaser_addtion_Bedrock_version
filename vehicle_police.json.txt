@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:vehicle_police",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 50, "max": 50 },
+      "minecraft:collision_box": { "width": 1.4, "height": 1.6 },
+      "minecraft:physics": { "has_gravity": true },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "family_types": ["player"]
+      },
+      "minecraft:pushable": { "is_pushable": false }
+    }
+  }
+}

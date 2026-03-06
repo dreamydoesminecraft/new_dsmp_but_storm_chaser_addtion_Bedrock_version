@@ -1,0 +1,32 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:tornado",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 9999 },
+      "minecraft:physics": { "has_gravity": false },
+      "minecraft:collision_box": { "width": 3, "height": 20 },
+      "minecraft:pushable": { "is_pushable": false },
+      "minecraft:timer": {
+        "time": 2,
+        "looping": true,
+        "on_timer": { "event": "tick" }
+      }
+    },
+    "events": {
+      "tick": {
+        "run_command": {
+          "command": [
+            "function storms/update_tornado",
+            "function storms/tornado_pull",
+            "function storms/tornado_debris"
+          ]
+        }
+      }
+    }
+  }
+}

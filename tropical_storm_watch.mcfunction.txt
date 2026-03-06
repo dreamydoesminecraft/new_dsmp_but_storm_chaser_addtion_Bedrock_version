@@ -1,0 +1,12 @@
+# ==========================================
+# WARNING — TROPICAL STORM WATCH
+# ==========================================
+
+# Set NWS alert code for Tropical Storm Watch
+scoreboard players set global nws_alert 12
+
+# Issue as a watch via NWS
+function nws/issue_watch
+
+# Broadcast as a weather update (not full emergency)
+function news/broadcast_weather

@@ -1,0 +1,9 @@
+# ==========================================
+# RADAR — TOWER TICK
+# ==========================================
+
+# Radar tower rotates
+execute as @e[type=radar_tower] run tp @s ~ ~ ~ ~5 ~
+
+# Radar tower performs scan
+execute as @e[type=radar_tower] run function radar/scan

@@ -1,0 +1,12 @@
+# ==========================================
+# STORM — TORNADO SUCTION
+# ==========================================
+
+# Pull players inward
+execute as @e[type=tornado] at @s run tp @a[distance=..12] ^ ^ ^1
+
+# Pull NPCs inward
+execute as @e[type=tornado] at @s run tp @e[tag=npc,distance=..12] ^ ^ ^1
+
+# Pull vehicles inward
+execute as @e[type=tornado] at @s run tp @e[tag=vehicle,distance=..12] ^ ^ ^1

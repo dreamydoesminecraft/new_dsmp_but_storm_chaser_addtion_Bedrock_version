@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:vehicle_plane",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 100, "max": 100 },
+      "minecraft:collision_box": { "width": 3.0, "height": 2.5 },
+      "minecraft:physics": { "has_gravity": false },
+      "minecraft:rideable": {
+        "seat_count": 4,
+        "family_types": ["player"]
+      },
+      "minecraft:pushable": { "is_pushable": false }
+    }
+  }
+}

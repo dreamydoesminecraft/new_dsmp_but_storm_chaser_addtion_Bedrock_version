@@ -1,0 +1,6 @@
+# ==========================================
+# TV — NWS ALERT MODE
+# ==========================================
+
+title @a[tag=near_tv] title {"text":"NWS ALERT","color":"red","bold":true}
+title @a[tag=near_tv] subtitle {"text":"Warning in effect","color":"yellow"}

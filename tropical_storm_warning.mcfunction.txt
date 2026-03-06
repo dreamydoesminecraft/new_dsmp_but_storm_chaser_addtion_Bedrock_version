@@ -1,0 +1,7 @@
+# ==========================================
+# WARNING — TROPICAL STORM WARNING
+# ==========================================
+
+scoreboard players set global nws_alert 6
+function nws/issue_warning
+function news/broadcast_weather

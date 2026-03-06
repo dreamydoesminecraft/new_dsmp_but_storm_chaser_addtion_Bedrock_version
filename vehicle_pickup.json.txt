@@ -1,0 +1,20 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:vehicle_pickup",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 45, "max": 45 },
+      "minecraft:collision_box": { "width": 1.5, "height": 1.7 },
+      "minecraft:physics": { "has_gravity": true },
+      "minecraft:rideable": {
+        "seat_count": 2,
+        "family_types": ["player"]
+      },
+      "minecraft:pushable": { "is_pushable": false }
+    }
+  }
+}

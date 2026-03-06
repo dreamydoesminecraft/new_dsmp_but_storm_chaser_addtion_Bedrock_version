@@ -1,0 +1,18 @@
+# ==========================================
+# TV UPDATE — runs every tick
+# ==========================================
+
+# If TV is set to breaking news
+execute as @e[type=tv_screen] if score @s tv_channel matches 1 run function electronics/tv_breaking_news
+
+# If TV is set to radar loop
+execute as @e[type=tv_screen] if score @s tv_channel matches 2 run function electronics/tv_radar_loop
+
+# If TV is set to SPC outlook
+execute as @e[type=tv_screen] if score @s tv_channel matches 3 run function electronics/tv_spc_outlook
+
+# If TV is set to NWS alert mode
+execute as @e[type=tv_screen] if score @s tv_channel matches 4 run function electronics/tv_nws_alert
+
+# Default idle mode
+execute as @e[type=tv_screen] if score @s tv_channel matches 0 run function electronics/tv_idle

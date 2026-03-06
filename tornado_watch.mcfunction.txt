@@ -1,0 +1,7 @@
+# ==========================================
+# WARNING — TORNADO WATCH
+# ==========================================
+
+scoreboard players set global nws_alert 1
+function nws/issue_watch
+function news/broadcast_weather

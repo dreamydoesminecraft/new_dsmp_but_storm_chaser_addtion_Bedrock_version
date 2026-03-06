@@ -1,0 +1,6 @@
+# ==========================================
+# TV — IDLE MODE
+# ==========================================
+
+title @a[tag=near_tv] title {"text":"TV Standby","color":"gray"}
+title @a[tag=near_tv] subtitle {"text":"No active broadcast","color":"dark_gray"}

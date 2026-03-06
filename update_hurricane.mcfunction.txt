@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — UPDATE HURRICANE
+# ==========================================
+
+# Expand wind field
+execute as @e[type=hurricane_eye] at @s run scoreboard players add @s wind_speed 2
+
+# Push entities outward
+execute as @e[type=hurricane_eye] at @s run tp @e[distance=..30] ^ ^ ^-1

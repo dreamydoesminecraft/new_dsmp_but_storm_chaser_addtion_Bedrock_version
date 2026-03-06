@@ -1,0 +1,15 @@
+# ==========================================
+# RADAR — VELOCITY SCAN
+# ==========================================
+
+# Reset velocity
+scoreboard players set @a radar_velocity 0
+
+# Tornado rotation
+execute as @a at @s if entity @e[type=tornado,distance=..80] run scoreboard players add @s radar_velocity 50
+
+# Supercell mesocyclone
+execute as @a at @s if entity @e[type=supercell,distance=..100] run scoreboard players add @s radar_velocity 30
+
+# Hurricane eyewall winds
+execute as @a at @s if entity @e[type=hurricane_eye,distance=..120] run scoreboard players add @s radar_velocity 40

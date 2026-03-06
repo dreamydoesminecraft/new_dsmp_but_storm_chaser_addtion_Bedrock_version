@@ -1,0 +1,6 @@
+# ==========================================
+# TV — BREAKING NEWS MODE
+# ==========================================
+
+title @a[tag=near_tv] title {"text":"BREAKING NEWS","color":"red","bold":true}
+title @a[tag=near_tv] subtitle {"text":"Severe weather developing...","color":"yellow"}

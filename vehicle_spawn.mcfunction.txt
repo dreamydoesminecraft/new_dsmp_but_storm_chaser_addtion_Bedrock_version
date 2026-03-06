@@ -1,0 +1,9 @@
+# ==========================================
+# VEHICLE — SPAWN
+# ==========================================
+
+# Spawn a generic vehicle (SUV)
+summon vehicle_suv ~ ~ ~
+tag @e[type=vehicle_suv,limit=1,sort=nearest] add vehicle
+scoreboard players set @e[type=vehicle_suv,limit=1,sort=nearest] vehicle_speed 0
+scoreboard players set @e[type=vehicle_suv,limit=1,sort=nearest] vehicle_damage 0

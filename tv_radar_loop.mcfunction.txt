@@ -1,0 +1,6 @@
+# ==========================================
+# TV — RADAR LOOP
+# ==========================================
+
+title @a[tag=near_tv] title {"text":"RADAR LOOP","color":"aqua","bold":true}
+title @a[tag=near_tv] subtitle {"text":"Reflectivity updating...","color":"white"}

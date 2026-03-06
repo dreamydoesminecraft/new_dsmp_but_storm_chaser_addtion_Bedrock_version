@@ -1,0 +1,16 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "tv_screen_ui": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "id": "tv_channel_image",
+          "texture": "textures/ui/tv_default",
+          "size": [400, 240]
+        }
+      ]
+    }
+  }
+}

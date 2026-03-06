@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — UPDATE SUPERCELL
+# ==========================================
+
+# Increase rotation
+execute as @e[type=supercell] run scoreboard players add @s rotation_level 2
+
+# Chance to spawn tornado
+execute as @e[type=supercell] if random 1..50 run function storms/spawn_tornado
