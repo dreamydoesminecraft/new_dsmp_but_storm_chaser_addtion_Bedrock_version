@@ -1,0 +1,5 @@
+# ==========================================
+# SPC — MESOSCALE DISCUSSION
+# ==========================================
+
+say SPC Mesoscale Discussion: Storms intensifying in the region.

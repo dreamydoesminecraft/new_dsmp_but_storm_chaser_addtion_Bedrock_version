@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — HAIL DAMAGE
+# ==========================================
+
+# Damage players hit by hail
+execute as @e[type=hailstorm] at @s run damage @a[distance=..3] 2
+
+# Damage NPCs
+execute as @e[type=hailstorm] at @s run scoreboard players remove @e[tag=npc,distance=..3] npc_health 2

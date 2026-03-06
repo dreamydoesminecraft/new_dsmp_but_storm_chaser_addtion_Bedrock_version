@@ -1,0 +1,22 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "radar_console_ui": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/radar_console",
+          "size": [400, 240]
+        },
+        {
+          "type": "image",
+          "id": "radar_sweep",
+          "texture": "textures/ui/radar_sweep",
+          "size": [300, 200],
+          "offset": [50, 20]
+        }
+      ]
+    }
+  }
+}

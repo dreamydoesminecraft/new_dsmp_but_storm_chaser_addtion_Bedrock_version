@@ -1,0 +1,15 @@
+# ==========================================
+# THERMOMETER — TEMPERATURE READING
+# ==========================================
+
+# Default temperature
+scoreboard players set @s thermometer_reading 72
+
+# Supercell cold downdraft
+execute as @s at @s if entity @e[type=supercell,distance=..50] run scoreboard players add @s thermometer_reading -10
+
+# Hurricane cooling
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..60] run scoreboard players add @s thermometer_reading -15
+
+# Heat from lightning
+execute as @s at @s if entity @e[type=lightning_bolt,distance=..10] run scoreboard players add @s thermometer_reading 5

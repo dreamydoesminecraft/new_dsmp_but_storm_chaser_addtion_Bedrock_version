@@ -1,0 +1,16 @@
+# ==========================================
+# NEWS — BREAKING NEWS BROADCAST
+# ==========================================
+
+# Notify all players
+title @a title {"text":"BREAKING NEWS","color":"red","bold":true}
+title @a subtitle {"text":"A major event is unfolding...","color":"yellow"}
+
+# Trigger TVs to switch to breaking news mode
+scoreboard players set @e[type=tv_screen] tv_channel 1
+
+# Trigger phones to show breaking news alert
+scoreboard players set @a phone_app 3
+
+# Notify news anchors (NPCs)
+execute as @e[type=news_anchor] run say Breaking News: A major event is developing!

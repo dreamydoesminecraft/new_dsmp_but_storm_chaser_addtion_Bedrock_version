@@ -1,0 +1,5 @@
+# ==========================================
+# RADAR — ROTATION SCAN
+# ==========================================
+
+execute as @a at @s if entity @e[type=tornado,distance=..100] run title @s actionbar {"text":"Rotation Detected","color":"red"}

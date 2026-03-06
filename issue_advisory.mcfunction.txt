@@ -1,0 +1,25 @@
+# ==========================================
+# NWS — ISSUE ADVISORY
+# ==========================================
+
+# Wind Advisory
+execute if score global nws_alert matches 20 run title @a title {"text":"WIND ADVISORY","color":"gray","bold":true}
+execute if score global nws_alert matches 20 run title @a subtitle {"text":"Strong winds expected","color":"white"}
+
+# Flood Advisory
+execute if score global nws_alert matches 21 run title @a title {"text":"FLOOD ADVISORY","color":"blue","bold":true}
+execute if score global nws_alert matches 21 run title @a subtitle {"text":"Minor flooding possible","color":"white"}
+
+# Heat Advisory
+execute if score global nws_alert matches 22 run title @a title {"text":"HEAT ADVISORY","color":"red","bold":true}
+execute if score global nws_alert matches 22 run title @a subtitle {"text":"Dangerous heat expected","color":"white"}
+
+# Winter Weather Advisory
+execute if score global nws_alert matches 23 run title @a title {"text":"WINTER WEATHER ADVISORY","color":"aqua","bold":true}
+execute if score global nws_alert matches 23 run title @a subtitle {"text":"Snow & ice possible","color":"white"}
+
+# Notify TVs
+execute if score global nws_alert matches 20..23 run scoreboard players set @e[type=tv_screen] tv_channel 4
+
+# Notify phones
+execute if score global nws_alert matches 20..23 run scoreboard players set @a phone_app 5

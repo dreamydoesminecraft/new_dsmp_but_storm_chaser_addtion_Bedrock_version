@@ -1,0 +1,6 @@
+# ==========================================
+# SIREN — DEACTIVATE
+# ==========================================
+
+scoreboard players set @e[type=siren] siren_state 0
+stopsound @a siren.tornado

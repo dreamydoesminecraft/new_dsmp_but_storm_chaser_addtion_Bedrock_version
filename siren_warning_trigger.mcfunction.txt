@@ -1,0 +1,15 @@
+# ==========================================
+# SIREN — WARNING TRIGGER
+# ==========================================
+
+# Tornado Warning
+execute if score global nws_alert matches 2 run function electronics/siren_activate
+
+# Tornado Emergency
+execute if score global nws_alert matches 3 run function electronics/siren_activate
+
+# Hurricane Warning
+execute if score global nws_alert matches 5 run function electronics/siren_activate
+
+# Extreme Wind Warning
+execute if score global nws_alert matches 7 run function electronics/siren_activate

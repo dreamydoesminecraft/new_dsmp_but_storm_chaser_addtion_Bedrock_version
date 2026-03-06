@@ -1,0 +1,7 @@
+# ==========================================
+# SPC — DAY 3 OUTLOOK
+# ==========================================
+
+say SPC Day 3 Outlook: Significant severe weather possible.
+
+scoreboard players set global spc_risk 4

@@ -1,0 +1,16 @@
+# ==========================================
+# NEWS — WEATHER BROADCAST
+# ==========================================
+
+# Title for players
+title @a title {"text":"WEATHER UPDATE","color":"aqua","bold":true}
+title @a subtitle {"text":"Conditions are changing across the region","color":"white"}
+
+# TVs switch to radar loop
+scoreboard players set @e[type=tv_screen] tv_channel 2
+
+# Phones switch to weather app
+scoreboard players set @a phone_app 2
+
+# News anchors speak
+execute as @e[type=news_anchor] run say Weather Update: Monitoring storms and changing conditions.

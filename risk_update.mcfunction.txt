@@ -1,0 +1,9 @@
+# ==========================================
+# SPC — RISK UPDATE
+# ==========================================
+
+# Increase risk if supercells exist
+execute if entity @e[type=supercell] run scoreboard players add global spc_risk 1
+
+# Cap at High Risk (5)
+execute if score global spc_risk matches 6.. run scoreboard players set global spc_risk 5

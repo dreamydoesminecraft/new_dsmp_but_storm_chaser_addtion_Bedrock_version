@@ -1,0 +1,17 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:ems_worker",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 20 },
+      "minecraft:movement": { "value": 0.17 },
+      "minecraft:behavior.random_stroll": { "priority": 1 },
+      "minecraft:behavior.look_at_player": { "priority": 2 },
+      "minecraft:collision_box": { "width": 0.6, "height": 1.8 }
+    }
+  }
+}

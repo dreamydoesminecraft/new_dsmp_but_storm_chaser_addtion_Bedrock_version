@@ -1,0 +1,5 @@
+# ==========================================
+# RADAR — HAIL CORE SCAN
+# ==========================================
+
+execute as @a at @s if entity @e[type=hailstorm,distance=..60] run title @s actionbar {"text":"Hail Core Detected","color":"aqua"}

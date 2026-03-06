@@ -1,0 +1,52 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:probe",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 5,
+        "max": 5
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.6,
+        "height": 0.6
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.tick_world": {
+        "priority": 1
+      },
+      "minecraft:timer": {
+        "time": 5,
+        "looping": true,
+        "on_timer": {
+          "event": "read_instruments"
+        }
+      }
+    },
+    "events": {
+      "read_instruments": {
+        "run_command": {
+          "command": [
+            "function instruments/read_anemometer",
+            "function instruments/read_barometer",
+            "function instruments/read_hygrometer",
+            "function instruments/read_thermometer",
+            "function instruments/read_debris_sensor"
+          ]
+        }
+      }
+    }
+  }
+}

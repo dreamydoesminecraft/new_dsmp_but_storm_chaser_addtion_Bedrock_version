@@ -1,0 +1,8 @@
+import { world, system } from "@minecraft/server";
+
+export function updateRadar() {
+  // Hook for radar sweeps
+  // Called by radar tower entity timer
+}
+
+system.runInterval(updateRadar, 40);

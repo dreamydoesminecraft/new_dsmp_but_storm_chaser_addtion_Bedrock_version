@@ -1,0 +1,6 @@
+# ==========================================
+# NPC — SPAWN BODY
+# ==========================================
+
+summon npc_body ~ ~ ~
+tag @e[type=npc_body,limit=1,sort=nearest] add expired

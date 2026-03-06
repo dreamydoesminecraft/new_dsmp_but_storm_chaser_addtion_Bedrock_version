@@ -1,0 +1,9 @@
+# ==========================================
+# NPC — DAILY CYCLE
+# ==========================================
+
+# Only run if NPC is healthy
+execute as @e[tag=npc] if score @s npc_injury matches 0 run tp @s ~ ~ ~ ~0.5 ~
+
+# Random idle chatter
+execute as @e[tag=npc] if score @s npc_injury matches 0 run say <NPC> Just another normal day...

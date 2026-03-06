@@ -1,0 +1,8 @@
+# ==========================================
+# NPC — SPAWN CITIZEN
+# ==========================================
+
+summon npc_citizen ~ ~ ~
+tag @e[type=npc_citizen,limit=1,sort=nearest] add npc
+scoreboard players set @e[type=npc_citizen,limit=1,sort=nearest] npc_state 0
+scoreboard players set @e[type=npc_citizen,limit=1,sort=nearest] npc_health 20

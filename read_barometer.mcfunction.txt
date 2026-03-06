@@ -1,0 +1,14 @@
+# ==========================================
+# BAROMETER — PRESSURE READING
+# ==========================================
+
+# Default pressure (1013 mb)
+scoreboard players set @s barometer_reading 1013
+
+# Tornado pressure drop
+execute as @s at @s if entity @e[type=tornado,distance=..40] run scoreboard players add @s barometer_reading -40
+execute as @s at @s if entity @e[type=tornado,distance=..20] run scoreboard players add @s barometer_reading -80
+
+# Hurricane pressure drop
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..80] run scoreboard players add @s barometer_reading -60
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..40] run scoreboard players add @s barometer_reading -100

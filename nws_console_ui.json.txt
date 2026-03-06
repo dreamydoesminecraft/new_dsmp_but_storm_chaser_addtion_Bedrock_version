@@ -1,0 +1,36 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "nws_console_ui": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/nws_console",
+          "size": [400, 240]
+        },
+        {
+          "type": "button",
+          "id": "issue_tornado_warning",
+          "text": "TOR WARNING",
+          "size": [120, 40],
+          "offset": [20, 40]
+        },
+        {
+          "type": "button",
+          "id": "issue_svr_warning",
+          "text": "SVR WARNING",
+          "size": [120, 40],
+          "offset": [20, 100]
+        },
+        {
+          "type": "button",
+          "id": "issue_ff_warning",
+          "text": "FLASH FLOOD",
+          "size": [120, 40],
+          "offset": [20, 160]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,12 @@
+# ==========================================
+# NPC — COLLAPSE
+# ==========================================
+
+# Mark NPC as collapsed
+scoreboard players set @s npc_state 2
+
+# Summon body entity
+function npc/npc_spawn_body
+
+# Remove NPC
+kill @s

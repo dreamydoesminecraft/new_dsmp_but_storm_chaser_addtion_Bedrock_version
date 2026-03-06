@@ -1,0 +1,8 @@
+# ==========================================
+# RADAR — MASTER SCAN
+# ==========================================
+
+function radar/reflectivity_scan
+function radar/velocity_scan
+function radar/hail_core_scan
+function radar/rotation_scan

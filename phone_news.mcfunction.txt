@@ -1,0 +1,6 @@
+# ==========================================
+# PHONE — NEWS
+# ==========================================
+
+title @s title {"text":"NEWS","color":"gold"}
+title @s subtitle {"text":"Latest updates...","color":"white"}

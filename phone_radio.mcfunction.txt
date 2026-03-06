@@ -1,0 +1,6 @@
+# ==========================================
+# PHONE — RADIO
+# ==========================================
+
+playsound radio.beep @s ~ ~ ~ 1 1
+title @s title {"text":"RADIO","color":"blue"}

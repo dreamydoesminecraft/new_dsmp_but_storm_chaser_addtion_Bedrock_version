@@ -1,0 +1,6 @@
+# ==========================================
+# PHONE — OPEN
+# ==========================================
+
+scoreboard players set @s phone_open 1
+title @s title {"text":"Phone Opened","color":"white"}

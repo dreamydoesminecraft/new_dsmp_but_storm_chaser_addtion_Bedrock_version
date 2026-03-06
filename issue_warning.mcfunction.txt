@@ -1,0 +1,43 @@
+# ==========================================
+# NWS — ISSUE WARNING
+# ==========================================
+
+# Tornado Warning (2)
+execute if score global nws_alert matches 2 run title @a title {"text":"TORNADO WARNING","color":"red","bold":true}
+execute if score global nws_alert matches 2 run title @a subtitle {"text":"Seek shelter immediately","color":"yellow"}
+
+# Tornado Emergency (3)
+execute if score global nws_alert matches 3 run title @a title {"text":"TORNADO EMERGENCY","color":"dark_red","bold":true}
+execute if score global nws_alert matches 3 run title @a subtitle {"text":"Catastrophic damage possible","color":"yellow"}
+
+# Severe Thunderstorm Warning (4)
+execute if score global nws_alert matches 4 run title @a title {"text":"SEVERE T-STORM WARNING","color":"gold","bold":true}
+execute if score global nws_alert matches 4 run title @a subtitle {"text":"Large hail & damaging winds","color":"white"}
+
+# Hurricane Warning (5)
+execute if score global nws_alert matches 5 run title @a title {"text":"HURRICANE WARNING","color":"aqua","bold":true}
+execute if score global nws_alert matches 5 run title @a subtitle {"text":"Life-threatening conditions expected","color":"white"}
+
+# Tropical Storm Warning (6)
+execute if score global nws_alert matches 6 run title @a title {"text":"TROPICAL STORM WARNING","color":"blue","bold":true}
+execute if score global nws_alert matches 6 run title @a subtitle {"text":"Tropical storm conditions expected","color":"white"}
+
+# Extreme Wind Warning (7)
+execute if score global nws_alert matches 7 run title @a title {"text":"EXTREME WIND WARNING","color":"gold","bold":true}
+execute if score global nws_alert matches 7 run title @a subtitle {"text":"100+ mph winds imminent","color":"white"}
+
+# Flash Flood Warning (8)
+execute if score global nws_alert matches 8 run title @a title {"text":"FLASH FLOOD WARNING","color":"blue","bold":true}
+execute if score global nws_alert matches 8 run title @a subtitle {"text":"Move to higher ground","color":"white"}
+
+# Trigger sirens for life-threatening warnings
+execute if score global nws_alert matches 2 run function electronics/siren_warning_trigger
+execute if score global nws_alert matches 3 run function electronics/siren_warning_trigger
+execute if score global nws_alert matches 5 run function electronics/siren_warning_trigger
+execute if score global nws_alert matches 7 run function electronics/siren_warning_trigger
+
+# TVs switch to alert mode
+execute if score global nws_alert matches 2..8 run scoreboard players set @e[type=tv_screen] tv_channel 4
+
+# Phones switch to alert mode
+execute if score global nws_alert matches 2..8 run scoreboard players set @a phone_app 5

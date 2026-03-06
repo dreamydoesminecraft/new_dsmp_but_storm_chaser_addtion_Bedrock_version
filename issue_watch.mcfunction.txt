@@ -1,0 +1,29 @@
+# ==========================================
+# NWS — ISSUE WATCH
+# ==========================================
+
+# Tornado Watch (1)
+execute if score global nws_alert matches 1 run title @a title {"text":"TORNADO WATCH","color":"yellow","bold":true}
+execute if score global nws_alert matches 1 run title @a subtitle {"text":"Conditions are favorable for tornadoes","color":"white"}
+
+# Flash Flood Watch (9)
+execute if score global nws_alert matches 9 run title @a title {"text":"FLASH FLOOD WATCH","color":"blue","bold":true}
+execute if score global nws_alert matches 9 run title @a subtitle {"text":"Flooding possible in low-lying areas","color":"white"}
+
+# Severe Thunderstorm Watch (10)
+execute if score global nws_alert matches 10 run title @a title {"text":"SEVERE T-STORM WATCH","color":"gold","bold":true}
+execute if score global nws_alert matches 10 run title @a subtitle {"text":"Severe storms possible","color":"white"}
+
+# Hurricane Watch (11)
+execute if score global nws_alert matches 11 run title @a title {"text":"HURRICANE WATCH","color":"aqua","bold":true}
+execute if score global nws_alert matches 11 run title @a subtitle {"text":"Hurricane conditions possible","color":"white"}
+
+# Tropical Storm Watch (12)
+execute if score global nws_alert matches 12 run title @a title {"text":"TROPICAL STORM WATCH","color":"blue","bold":true}
+execute if score global nws_alert matches 12 run title @a subtitle {"text":"Tropical storm conditions possible","color":"white"}
+
+# Notify TVs (all watches)
+execute if score global nws_alert matches 1..12 run scoreboard players set @e[type=tv_screen] tv_channel 4
+
+# Notify phones (all watches)
+execute if score global nws_alert matches 1..12 run scoreboard players set @a phone_app 5

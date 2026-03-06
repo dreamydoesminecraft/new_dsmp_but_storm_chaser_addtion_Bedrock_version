@@ -1,0 +1,15 @@
+# ==========================================
+# NPC — STORM REACTION
+# ==========================================
+
+# Panic if tornado is close
+execute as @e[tag=npc] at @s if entity @e[type=tornado,distance=..40] run say <NPC> A tornado! Run!
+
+# Run away from tornado
+execute as @e[tag=npc] at @s if entity @e[type=tornado,distance=..30] run tp @s ^ ^ ^-1
+
+# Panic if hurricane winds are strong
+execute as @e[tag=npc] at @s if entity @e[type=hurricane_eye,distance=..60] run say <NPC> The winds are too strong!
+
+# Move toward shelter (tagged “shelter”)
+execute as @e[tag=npc] at @s if entity @e[type=supercell,distance=..50] run tp @s @e[tag=shelter,limit=1,sort=nearest]

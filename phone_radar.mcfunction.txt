@@ -1,0 +1,11 @@
+# ==========================================
+# PHONE — RADAR
+# ==========================================
+
+title @s title {"text":"RADAR","color":"aqua","bold":true}
+
+# Show reflectivity
+execute if score @s radar_reflectivity matches 1.. run title @s subtitle {"text":"Reflectivity: High","color":"yellow"}
+
+# Show velocity
+execute if score @s radar_velocity matches 1.. run title @s subtitle {"text":"Velocity: Rotation Detected","color":"red"}

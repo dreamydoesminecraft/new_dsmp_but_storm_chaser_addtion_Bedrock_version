@@ -1,0 +1,6 @@
+# ==========================================
+# SIREN — ACTIVATE
+# ==========================================
+
+scoreboard players set @e[type=siren] siren_state 1
+playsound siren.tornado @a ~ ~ ~ 1 1

@@ -1,0 +1,15 @@
+# ==========================================
+# NWS — BROADCAST LOOP
+# ==========================================
+
+# If any alert is active, broadcast it
+execute if score global nws_alert matches 1..30 run say NWS: An alert is in effect.
+
+# NPC meteorologists announce alerts
+execute as @e[type=npc_meteorologist] if score global nws_alert matches 1..30 run say NWS Alert issued — stay tuned.
+
+# Radios beep during alerts
+execute if score global nws_alert matches 1..30 run playsound radio.beep @a ~ ~ ~ 1 1
+
+# TVs stay in alert mode
+execute if score global nws_alert matches 1..30 run scoreboard players set @e[type=tv_screen] tv_channel 4

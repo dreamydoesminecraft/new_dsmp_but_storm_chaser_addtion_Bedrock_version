@@ -1,0 +1,55 @@
+# ==========================================
+# Storm Chaser SMP — INIT
+# Initializes all scoreboards and systems
+# ==========================================
+
+# ----- Storm System -----
+scoreboard objectives add storm_id dummy
+scoreboard objectives add storm_type dummy
+scoreboard objectives add storm_intensity dummy
+scoreboard objectives add storm_x dummy
+scoreboard objectives add storm_z dummy
+scoreboard objectives add wind_speed dummy
+scoreboard objectives add tornado_intensity dummy
+scoreboard objectives add tropical_category dummy
+scoreboard objectives add rotation_level dummy
+scoreboard objectives add hail_size dummy
+
+# ----- Warning System -----
+scoreboard objectives add nws_alert dummy
+scoreboard objectives add nws_timer dummy
+scoreboard objectives add spc_risk dummy
+
+# ----- Radar System -----
+scoreboard objectives add radar_scan dummy
+scoreboard objectives add radar_reflectivity dummy
+scoreboard objectives add radar_velocity dummy
+
+# ----- Electronics -----
+scoreboard objectives add tv_channel dummy
+scoreboard objectives add siren_state dummy
+scoreboard objectives add console_mode dummy
+
+# ----- Phone System -----
+scoreboard objectives add phone_open dummy
+scoreboard objectives add phone_app dummy
+
+# ----- NPC System -----
+scoreboard objectives add npc_state dummy
+scoreboard objectives add npc_health dummy
+scoreboard objectives add npc_injury dummy
+
+# ----- Vehicles -----
+scoreboard objectives add vehicle_speed dummy
+scoreboard objectives add vehicle_damage dummy
+
+# ----- Instruments -----
+scoreboard objectives add anemometer_reading dummy
+scoreboard objectives add barometer_reading dummy
+scoreboard objectives add hygrometer_reading dummy
+scoreboard objectives add thermometer_reading dummy
+scoreboard objectives add debris_sensor_reading dummy
+
+# ----- Global Rules -----
+gamerule commandBlockOutput false
+gamerule sendCommandFeedback false

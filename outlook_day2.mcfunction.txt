@@ -1,0 +1,7 @@
+# ==========================================
+# SPC — DAY 2 OUTLOOK
+# ==========================================
+
+say SPC Day 2 Outlook: Conditions may worsen tomorrow.
+
+scoreboard players set global spc_risk 3

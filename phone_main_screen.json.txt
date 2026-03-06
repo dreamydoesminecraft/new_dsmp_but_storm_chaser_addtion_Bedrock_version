@@ -1,0 +1,57 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "phone_main_screen": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/phone_background",
+          "size": [400, 240]
+        },
+        {
+          "type": "button",
+          "id": "radar_app",
+          "text": "Radar",
+          "size": [80, 40],
+          "offset": [20, 40]
+        },
+        {
+          "type": "button",
+          "id": "gps_app",
+          "text": "GPS",
+          "size": [80, 40],
+          "offset": [120, 40]
+        },
+        {
+          "type": "button",
+          "id": "news_app",
+          "text": "News",
+          "size": [80, 40],
+          "offset": [220, 40]
+        },
+        {
+          "type": "button",
+          "id": "spc_app",
+          "text": "SPC",
+          "size": [80, 40],
+          "offset": [20, 100]
+        },
+        {
+          "type": "button",
+          "id": "nws_app",
+          "text": "NWS",
+          "size": [80, 40],
+          "offset": [120, 100]
+        },
+        {
+          "type": "button",
+          "id": "radio_app",
+          "text": "Radio",
+          "size": [80, 40],
+          "offset": [220, 100]
+        }
+      ]
+    }
+  }
+}

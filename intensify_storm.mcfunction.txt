@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — INTENSIFICATION
+# ==========================================
+
+# Tornado intensification
+execute as @e[type=tornado] if random 1..100 run scoreboard players add @s tornado_intensity 1
+
+# Hurricane intensification
+execute as @e[type=hurricane_eye] if random 1..80 run scoreboard players add @s tropical_category 1

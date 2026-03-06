@@ -1,0 +1,28 @@
+import { world, system } from "@minecraft/server";
+
+system.runInterval(() => {
+  for (const npc of world.getEntities({ tags: ["npc"] })) {
+    // Panic near tornado
+    const tornado = world.getEntities({
+      type: "storm:tornado",
+      location: npc.location,
+      maxDistance: 30
+    })[0];
+
+    if (tornado) {
+      const away = {
+        x: npc.location.x - tornado.location.x,
+        y: npc.location.y,
+        z: npc.location.z - tornado.location.z
+      };
+      npc.teleport(
+        {
+          x: npc.location.x + away.x * 0.2,
+          y: npc.location.y,
+          z: npc.location.z + away.z * 0.2
+        },
+        npc.dimension
+      );
+    }
+  }
+}, 10);

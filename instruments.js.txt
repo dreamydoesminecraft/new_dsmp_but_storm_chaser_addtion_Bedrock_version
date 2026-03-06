@@ -1,0 +1,6 @@
+import { world } from "@minecraft/server";
+
+export function readProbe(probe) {
+  // Hook for probe instrument readings
+  // Wind, pressure, humidity, temp, debris
+}

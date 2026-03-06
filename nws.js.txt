@@ -1,0 +1,6 @@
+import { world } from "@minecraft/server";
+
+export function issueWarning(type) {
+  // Hook for NWS alert logic
+  // type = "tornado", "hurricane", etc.
+}

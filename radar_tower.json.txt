@@ -1,0 +1,29 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:radar_tower",
+      "is_spawnable": true,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:health": { "value": 50 },
+      "minecraft:physics": { "has_gravity": false },
+      "minecraft:collision_box": { "width": 1.0, "height": 6.0 },
+      "minecraft:timer": {
+        "time": 5,
+        "looping": true,
+        "on_timer": { "event": "scan" }
+      }
+    },
+    "events": {
+      "scan": {
+        "run_command": {
+          "command": [
+            "function radar/tower_tick"
+          ]
+        }
+      }
+    }
+  }
+}

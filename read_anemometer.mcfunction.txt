@@ -1,0 +1,16 @@
+# ==========================================
+# ANEMOMETER — WIND SPEED READING
+# ==========================================
+
+# Reset reading
+scoreboard players set @s anemometer_reading 0
+
+# If near tornado, wind increases with intensity
+execute as @s at @s if entity @e[type=tornado,distance=..40] run scoreboard players add @s anemometer_reading 40
+execute as @s at @s if entity @e[type=tornado,distance=..20] run scoreboard players add @s anemometer_reading 60
+execute as @s at @s if entity @e[type=tornado,distance=..10] run scoreboard players add @s anemometer_reading 90
+
+# If near hurricane, wind based on category
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..80] run scoreboard players add @s anemometer_reading 50
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..40] run scoreboard players add @s anemometer_reading 80
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..20] run scoreboard players add @s anemometer_reading 110

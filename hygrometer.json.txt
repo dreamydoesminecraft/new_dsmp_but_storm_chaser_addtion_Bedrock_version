@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "storm:hygrometer",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "hygrometer",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

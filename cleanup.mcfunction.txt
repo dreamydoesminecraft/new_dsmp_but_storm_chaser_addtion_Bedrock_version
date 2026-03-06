@@ -1,0 +1,17 @@
+# ==========================================
+# Storm Chaser SMP — CLEANUP
+# Removes unused entities and resets values
+# ==========================================
+
+# Remove dead NPC bodies older than 30 seconds
+kill @e[type=npc_body,tag=expired]
+
+# Remove debris older than 10 seconds
+kill @e[type=debris,tag=old]
+
+# Reset temporary radar values
+scoreboard players reset @a radar_reflectivity
+scoreboard players reset @a radar_velocity
+
+# Reset temporary electronics states
+scoreboard players reset @a console_mode

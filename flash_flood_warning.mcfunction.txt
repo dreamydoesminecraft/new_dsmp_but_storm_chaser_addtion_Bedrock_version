@@ -1,0 +1,7 @@
+# ==========================================
+# WARNING — FLASH FLOOD
+# ==========================================
+
+scoreboard players set global nws_alert 8
+function nws/issue_warning
+function news/broadcast_emergency

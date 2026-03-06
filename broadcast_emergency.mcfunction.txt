@@ -1,0 +1,16 @@
+# ==========================================
+# NEWS — EMERGENCY BROADCAST
+# ==========================================
+
+# Emergency alert on screen
+title @a title {"text":"EMERGENCY ALERT","color":"dark_red","bold":true}
+title @a subtitle {"text":"A life-threatening situation is occurring","color":"yellow"}
+
+# TVs switch to NWS alert mode
+scoreboard players set @e[type=tv_screen] tv_channel 4
+
+# Phones switch to NWS alert app
+scoreboard players set @a phone_app 5
+
+# News anchors go into emergency mode
+execute as @e[type=news_anchor] run say EMERGENCY ALERT: Seek shelter immediately!

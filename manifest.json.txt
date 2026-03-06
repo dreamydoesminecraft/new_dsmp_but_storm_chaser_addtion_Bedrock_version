@@ -1,0 +1,35 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "StormChaser Behavior Pack",
+    "description": "Core behavior pack for the Storm Chaser SMP. Includes storms, tornadoes, hurricanes, thunderstorms, hail, NPCs, vehicles, electronics, phones, radar, SPC, NWS, and all severe weather logic.",
+    "uuid": "d3b2c1c4-8e4e-4b0a-9c7a-9f1c2e8b7a11",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 21, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "a1f4e3b2-7c9d-4e1f-8b22-6c4d9f8a1e55",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "entry": "scripts/main.js",
+      "uuid": "f7c3a2d1-4b8e-4a9e-9c33-1b2d4f7e8c99",
+      "version": [1, 0, 0]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "b4a1f2c3-9d8e-4c1f-8a22-7c4d9f8a1e44",
+      "version": [1, 0, 0]
+    }
+  ],
+  "metadata": {
+    "authors": ["Storm Chaser SMP Development"],
+    "license": "MIT",
+    "url": "https://github.com/StormChaserSMP"
+  }
+}

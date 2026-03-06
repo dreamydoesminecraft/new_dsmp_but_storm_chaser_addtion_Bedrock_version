@@ -1,0 +1,9 @@
+# ==========================================
+# SIREN — TICK
+# ==========================================
+
+# Rotate siren entity
+execute as @e[type=siren] if score @s siren_state matches 1 run tp @s ~ ~ ~ ~5 ~
+
+# Loop siren sound every 3 seconds
+execute as @e[type=siren] if score @s siren_state matches 1 run playsound siren.tornado @a ~ ~ ~ 1 1

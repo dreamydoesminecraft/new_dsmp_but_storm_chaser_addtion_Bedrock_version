@@ -1,0 +1,49 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:debris",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 1,
+        "max": 1
+      },
+      "minecraft:physics": {
+        "has_gravity": true,
+        "has_collision": true
+      },
+      "minecraft:collision_box": {
+        "width": 0.4,
+        "height": 0.4
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:damage_sensor": {
+        "triggers": [
+          {
+            "cause": "fall",
+            "deals_damage": false
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "time": 60,
+        "looping": false,
+        "on_timer": {
+          "event": "despawn"
+        }
+      }
+    },
+    "events": {
+      "despawn": {
+        "remove": {}
+      }
+    }
+  }
+}

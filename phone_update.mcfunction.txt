@@ -1,0 +1,21 @@
+# ==========================================
+# PHONE — UPDATE
+# ==========================================
+
+# GPS
+execute if score @s phone_app matches 1 run function phone/phone_gps
+
+# Radar
+execute if score @s phone_app matches 2 run function phone/phone_radar
+
+# News
+execute if score @s phone_app matches 3 run function phone/phone_news
+
+# SPC
+execute if score @s phone_app matches 4 run function phone/phone_spc
+
+# NWS Alerts
+execute if score @s phone_app matches 5 run function phone/phone_nws
+
+# Radio
+execute if score @s phone_app matches 6 run function phone/phone_radio

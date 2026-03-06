@@ -1,0 +1,12 @@
+# ==========================================
+# NPC — DAMAGE HANDLING
+# ==========================================
+
+# Debris hit
+execute as @e[tag=npc] at @s if entity @e[type=debris,distance=..3] run scoreboard players remove @s npc_health 5
+
+# Strong wind impact
+execute as @e[tag=npc] at @s if entity @e[type=tornado,distance=..15] run scoreboard players remove @s npc_health 10
+
+# If health reaches 0 → collapse
+execute as @e[tag=npc] if score @s npc_health matches ..0 run function npc/npc_collapse

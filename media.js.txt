@@ -1,0 +1,9 @@
+import { world } from "@minecraft/server";
+
+export function updateTVs() {
+  // Hook for TV channel updates
+}
+
+export function updateRadios() {
+  // Hook for radio alert beeps
+}

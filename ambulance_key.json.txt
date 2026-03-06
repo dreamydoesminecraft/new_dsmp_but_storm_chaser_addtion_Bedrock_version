@@ -1,0 +1,13 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "storm:ambulance_key",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "ambulance_key",
+      "minecraft:max_stack_size": 1
+    }
+  }
+}

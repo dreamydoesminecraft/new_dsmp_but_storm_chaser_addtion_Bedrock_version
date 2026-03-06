@@ -1,0 +1,11 @@
+# ==========================================
+# PHONE — SPC OUTLOOK
+# ==========================================
+
+title @s title {"text":"SPC OUTLOOK","color":"yellow"}
+
+execute if score global spc_risk matches 1 run title @s subtitle {"text":"Marginal Risk","color":"green"}
+execute if score global spc_risk matches 2 run title @s subtitle {"text":"Slight Risk","color":"yellow"}
+execute if score global spc_risk matches 3 run title @s subtitle {"text":"Enhanced Risk","color":"orange"}
+execute if score global spc_risk matches 4 run title @s subtitle {"text":"Moderate Risk","color":"red"}
+execute if score global spc_risk matches 5 run title @s subtitle {"text":"High Risk","color":"dark_red"}

@@ -1,0 +1,8 @@
+# ==========================================
+# WARNING — HURRICANE WARNING
+# ==========================================
+
+scoreboard players set global nws_alert 5
+function nws/issue_warning
+function news/broadcast_emergency
+function electronics/siren_warning_trigger

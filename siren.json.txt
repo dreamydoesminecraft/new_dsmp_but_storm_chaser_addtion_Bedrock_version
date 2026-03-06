@@ -1,0 +1,45 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:siren",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:physics": {
+        "has_gravity": false,
+        "has_collision": false
+      },
+      "minecraft:collision_box": {
+        "width": 1.0,
+        "height": 2.0
+      },
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": false
+      },
+      "minecraft:timer": {
+        "time": 10,
+        "looping": true,
+        "on_timer": {
+          "event": "siren_tick"
+        }
+      }
+    },
+    "events": {
+      "siren_tick": {
+        "run_command": {
+          "command": [
+            "function electronics/siren_tick"
+          ]
+        }
+      }
+    }
+  }
+}

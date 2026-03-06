@@ -1,0 +1,24 @@
+{
+  "format_version": "1.20.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "storm:radar_beam",
+      "is_spawnable": false,
+      "is_summonable": true
+    },
+    "components": {
+      "minecraft:physics": { "has_gravity": false },
+      "minecraft:collision_box": { "width": 0.1, "height": 0.1 },
+      "minecraft:timer": {
+        "time": 2,
+        "looping": false,
+        "on_timer": { "event": "despawn" }
+      }
+    },
+    "events": {
+      "despawn": {
+        "remove": {}
+      }
+    }
+  }
+}

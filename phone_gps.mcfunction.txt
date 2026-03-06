@@ -1,0 +1,6 @@
+# ==========================================
+# PHONE — GPS
+# ==========================================
+
+title @s title {"text":"GPS","color":"green"}
+title @s subtitle {"text":"Locating...","color":"white"}

@@ -1,0 +1,43 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "phone_radar_screen": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/radar_background",
+          "size": [400, 240]
+        },
+        {
+          "type": "image",
+          "id": "radar_image",
+          "texture": "textures/ui/radar_reflectivity",
+          "size": [300, 200],
+          "offset": [50, 20]
+        },
+        {
+          "type": "button",
+          "id": "mode_reflectivity",
+          "text": "REF",
+          "size": [60, 30],
+          "offset": [20, 200]
+        },
+        {
+          "type": "button",
+          "id": "mode_velocity",
+          "text": "VEL",
+          "size": [60, 30],
+          "offset": [100, 200]
+        },
+        {
+          "type": "button",
+          "id": "back",
+          "text": "Back",
+          "size": [60, 30],
+          "offset": [320, 200]
+        }
+      ]
+    }
+  }
+}

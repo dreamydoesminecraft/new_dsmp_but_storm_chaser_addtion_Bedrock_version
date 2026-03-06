@@ -1,0 +1,12 @@
+# ==========================================
+# DEBRIS SENSOR — IMPACT READING
+# ==========================================
+
+# Reset reading
+scoreboard players set @s debris_sensor_reading 0
+
+# Detect debris entity
+execute as @s at @s if entity @e[type=debris,distance=..10] run scoreboard players add @s debris_sensor_reading 1
+
+# Detect multiple debris impacts
+execute as @s at @s if entity @e[type=debris,distance=..5] run scoreboard players add @s debris_sensor_reading 2

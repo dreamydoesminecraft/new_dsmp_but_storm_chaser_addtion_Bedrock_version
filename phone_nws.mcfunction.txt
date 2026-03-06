@@ -1,0 +1,10 @@
+# ==========================================
+# PHONE — NWS ALERTS
+# ==========================================
+
+title @s title {"text":"NWS ALERT","color":"red","bold":true}
+
+execute if score global nws_alert matches 2 run title @s subtitle {"text":"Tornado Warning","color":"yellow"}
+execute if score global nws_alert matches 3 run title @s subtitle {"text":"Tornado Emergency","color":"dark_red"}
+execute if score global nws_alert matches 5 run title @s subtitle {"text":"Hurricane Warning","color":"aqua"}
+execute if score global nws_alert matches 7 run title @s subtitle {"text":"Extreme Wind Warning","color":"gold"}

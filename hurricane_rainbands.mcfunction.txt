@@ -1,0 +1,9 @@
+# ==========================================
+# STORM — HURRICANE RAINBANDS
+# ==========================================
+
+# Spawn rain particles
+execute as @e[type=hurricane_eye] at @s run particle rain ~ ~ ~ 1 1 1 0.1 50
+
+# Occasional lightning
+execute as @e[type=hurricane_eye] at @s if random 1..40 run summon lightning_bolt ~ ~ ~

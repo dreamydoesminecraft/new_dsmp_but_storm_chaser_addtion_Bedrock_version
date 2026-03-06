@@ -1,0 +1,9 @@
+# ==========================================
+# NPC — RESCUE LOGIC
+# ==========================================
+
+# EMS picks up body
+execute as @e[type=ems_worker] at @s if entity @e[type=npc_body,distance=..3] run say EMS: Recovering victim...
+
+# Remove body after rescue
+execute as @e[type=ems_worker] at @s if entity @e[type=npc_body,distance=..3] run kill @e[type=npc_body,distance=..3,limit=1]

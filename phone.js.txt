@@ -1,0 +1,6 @@
+import { world } from "@minecraft/server";
+
+export function updatePhones() {
+  // Hook for phone app switching
+  // Radar, GPS, NWS, SPC, News
+}

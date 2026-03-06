@@ -1,0 +1,35 @@
+{
+  "namespace": "storm",
+  "ui_defs": {
+    "phone_gps_screen": {
+      "type": "panel",
+      "controls": [
+        {
+          "type": "image",
+          "texture": "textures/ui/gps_background",
+          "size": [400, 240]
+        },
+        {
+          "type": "image",
+          "id": "gps_map",
+          "texture": "textures/ui/gps_map",
+          "size": [300, 200],
+          "offset": [50, 20]
+        },
+        {
+          "type": "label",
+          "id": "coords",
+          "text": "X:0 Z:0",
+          "offset": [20, 200]
+        },
+        {
+          "type": "button",
+          "id": "back",
+          "text": "Back",
+          "size": [60, 30],
+          "offset": [320, 200]
+        }
+      ]
+    }
+  }
+}

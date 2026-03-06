@@ -1,0 +1,16 @@
+# ==========================================
+# PROBE DEPLOYMENT
+# ==========================================
+
+# Summon probe entity
+summon probe ~ ~1 ~
+
+# Tag probe for tracking
+tag @e[type=probe,limit=1,sort=nearest] add active_probe
+
+# Run all instrument readings on the probe
+execute as @e[type=probe,tag=active_probe] run function instruments/read_anemometer
+execute as @e[type=probe,tag=active_probe] run function instruments/read_barometer
+execute as @e[type=probe,tag=active_probe] run function instruments/read_hygrometer
+execute as @e[type=probe,tag=active_probe] run function instruments/read_thermometer
+execute as @e[type=probe,tag=active_probe] run function instruments/read_debris_sensor

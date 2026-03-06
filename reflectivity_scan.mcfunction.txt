@@ -1,0 +1,18 @@
+# ==========================================
+# RADAR — REFLECTIVITY SCAN
+# ==========================================
+
+# Reset reflectivity
+scoreboard players set @a radar_reflectivity 0
+
+# Thunderstorm reflectivity
+execute as @a at @s if entity @e[type=thunderstorm,distance=..80] run scoreboard players add @s radar_reflectivity 20
+
+# Supercell reflectivity
+execute as @a at @s if entity @e[type=supercell,distance=..100] run scoreboard players add @s radar_reflectivity 40
+
+# Hurricane rainbands
+execute as @a at @s if entity @e[type=hurricane_eye,distance=..150] run scoreboard players add @s radar_reflectivity 30
+
+# Hail core
+execute as @a at @s if entity @e[type=hailstorm,distance=..60] run scoreboard players add @s radar_reflectivity 60

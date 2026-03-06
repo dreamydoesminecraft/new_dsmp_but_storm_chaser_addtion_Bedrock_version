@@ -1,0 +1,14 @@
+# ==========================================
+# NWS — DAILY UPDATE
+# ==========================================
+
+say NWS Daily Update: Reviewing hazards and SPC risk levels.
+
+# Update SPC risk map
+function spc/risk_update
+
+# Update TV SPC channel
+scoreboard players set @e[type=tv_screen] tv_channel 3
+
+# Update phones to weather app
+scoreboard players set @a phone_app 2

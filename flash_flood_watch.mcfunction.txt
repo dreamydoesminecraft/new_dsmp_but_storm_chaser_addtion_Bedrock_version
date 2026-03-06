@@ -1,0 +1,12 @@
+# ==========================================
+# WARNING — FLASH FLOOD WATCH
+# ==========================================
+
+# Set NWS alert code for Flash Flood Watch
+scoreboard players set global nws_alert 9
+
+# Issue as a watch via NWS
+function nws/issue_watch
+
+# Broadcast as a weather update (not emergency)
+function news/broadcast_weather

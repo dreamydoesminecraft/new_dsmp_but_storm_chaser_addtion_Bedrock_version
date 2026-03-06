@@ -1,0 +1,8 @@
+# ==========================================
+# SPC — DAY 1 OUTLOOK
+# ==========================================
+
+say SPC Day 1 Outlook: Monitoring severe weather potential.
+
+# Set risk level
+scoreboard players set global spc_risk 2

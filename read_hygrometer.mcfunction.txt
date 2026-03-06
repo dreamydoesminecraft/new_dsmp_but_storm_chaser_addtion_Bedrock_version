@@ -1,0 +1,15 @@
+# ==========================================
+# HYGROMETER — HUMIDITY READING
+# ==========================================
+
+# Base humidity
+scoreboard players set @s hygrometer_reading 40
+
+# Thunderstorm increases humidity
+execute as @s at @s if entity @e[type=thunderstorm,distance=..60] run scoreboard players add @s hygrometer_reading 30
+
+# Hurricane increases humidity heavily
+execute as @s at @s if entity @e[type=hurricane_eye,distance=..80] run scoreboard players add @s hygrometer_reading 50
+
+# Supercell moisture
+execute as @s at @s if entity @e[type=supercell,distance=..70] run scoreboard players add @s hygrometer_reading 40

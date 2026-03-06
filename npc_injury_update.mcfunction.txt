@@ -1,0 +1,9 @@
+# ==========================================
+# NPC — INJURY UPDATE
+# ==========================================
+
+# Injured if health < 15
+execute as @e[tag=npc] if score @s npc_health matches ..15 run scoreboard players set @s npc_injury 1
+
+# Critical if health < 8
+execute as @e[tag=npc] if score @s npc_health matches ..8 run scoreboard players set @s npc_injury 2
